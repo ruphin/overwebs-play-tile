@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<script type="module" src="src/overwebs-play-tile.js"></script>
+
+<title>OVERWEBS</title>
+
+
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background: #223;
+  }
+
+  div {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  overwebs-play-tile {
+    margin: 10px;
+  }
+
+   :root {
+    --overwebs-window-size: 2560px;
+  }
+</style>
+
+<!-- build:remove -->
+<span id="browser-sync-binding"></span>
+<!-- endbuild -->
+
+<div>
+  <overwebs-play-tile quick-play>
+    <span slot="title">Quick Play</span>
+    <span slot="description">Jump into a game against other players of your skill level.</span>
+  </overwebs-play-tile>
+
+  <overwebs-play-tile info arcade>
+    <span slot="title">Arcade</span>
+    <span slot="description">New game modes! New rules! New maps! Enter the arcade.</span>
+  </overwebs-play-tile>
+
+  <overwebs-play-tile tutorial>
+    <span slot="title">Tutorial</span>
+    <span slot="description">Learn the basics of Overwatch.</span>
+  </overwebs-play-tile>
+
+  <overwebs-play-tile hard-ai>
+    <span slot="title">Hard</span>
+    <span slot="description">Play against hard difficulty AI-controlled heroes.</span>
+  </overwebs-play-tile>
+
+</div>
+
+
+<script>
+  // Module load path
+  window.modulesAssetPath = function (module) {
+    if (module === 'overwebs-play-tile') {
+      return '';
+    } else {
+      return `node_modules/${module}`;
+    }
+  }
+
+</script>
