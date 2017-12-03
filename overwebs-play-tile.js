@@ -152,7 +152,7 @@ import{GluonElement,html}from'../gluonjs/gluon.js';import'../overwebs-fonts/over
       .rmb {
         width: calc(26 / 2560 * var(--overwebs-window-size, 1920px));
         height: calc(37 / 2560 * var(--overwebs-window-size, 1920px));
-        background: url('images/rmb.png') center center no-repeat;
+        background: ${imageUrl('rmb.png')} center center no-repeat;
         background-size: contain;
       }
 
