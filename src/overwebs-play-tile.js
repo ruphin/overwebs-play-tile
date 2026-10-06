@@ -1,5 +1,5 @@
-import { GluonElement, html } from '../gluonjs/gluon.js';
-import '../overwebs-fonts/overwebs-fonts.js';
+import { GluonElement, html } from 'gluonjs/gluon.js';
+import 'overwebs-fonts/overwebs-fonts.js';
 
 const assetPath = (window.modulesAssetPath && window.modulesAssetPath('overwebs-play-tile')) || '';
 const imageUrl = img => {
